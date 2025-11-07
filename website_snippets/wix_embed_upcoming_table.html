@@ -1,0 +1,42 @@
+<!-- Drop this into Wix "Embed HTML" element. Replace YOUR_PAGES_URL below. -->
+<style>
+  table { width:100%; border-collapse: collapse; font: 14px/1.4 system-ui, sans-serif; }
+  th, td { padding: 8px 10px; border-bottom: 1px solid #ddd; text-align: left; }
+  th { position: sticky; top: 0; background: #f8f8f8; }
+  .muted { color:#666; font-size:12px; margin:8px 0 12px; }
+</style>
+<div class="muted" id="meta"></div>
+<table id="tbl">
+  <thead>
+    <tr>
+      <th>NCT ID</th>
+      <th>Title</th>
+      <th>Phase</th>
+      <th>Status</th>
+      <th>Primary Completion</th>
+      <th>Lead Sponsor</th>
+      <th>Enrollment</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<script>
+(async () => {
+  const url = "https://YOUR_PAGES_URL/upcoming_12m.json?ts=" + Date.now();
+  const { meta, data } = await fetch(url).then(r => r.json());
+  document.getElementById('meta').textContent = "Upcoming Primary Completions (12m) — As of " + meta.as_of_utc + " · " + data.length + " studies";
+  const tbody = document.querySelector("#tbl tbody");
+  const fmt = (d) => d ? new Date(d).toISOString().slice(0,10) : "";
+  data.forEach(r => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td><a href="https://clinicaltrials.gov/study/${r.nct_id}" target="_blank" rel="noopener">${r.nct_id}</a></td>
+                    <td>${(r.title||"").replace(/</g,"&lt;")}</td>
+                    <td>${r.phase_std||""}</td>
+                    <td>${r.overall_status||""}</td>
+                    <td>${fmt(r.primary_completion_date)} ${r.primary_completion_date_type ? '('+r.primary_completion_date_type+')' : ''}</td>
+                    <td>${r.lead_sponsor||""}</td>
+                    <td>${r.enrollment ?? ""}</td>`;
+    tbody.appendChild(tr);
+  });
+})();
+</script>
