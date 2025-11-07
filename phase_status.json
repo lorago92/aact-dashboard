@@ -1,0 +1,437 @@
+{
+  "meta": {
+    "as_of_utc": "2025-11-07 02:38:57.349867+00:00"
+  },
+  "data": [
+    {
+      "phase_std": "EARLY_PHASE1",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "n": 284
+    },
+    {
+      "phase_std": "EARLY_PHASE1",
+      "status": "COMPLETED",
+      "n": 2471
+    },
+    {
+      "phase_std": "EARLY_PHASE1",
+      "status": "ENROLLING_BY_INVITATION",
+      "n": 55
+    },
+    {
+      "phase_std": "EARLY_PHASE1",
+      "status": "NOT_YET_RECRUITING",
+      "n": 438
+    },
+    {
+      "phase_std": "EARLY_PHASE1",
+      "status": "RECRUITING",
+      "n": 953
+    },
+    {
+      "phase_std": "EARLY_PHASE1",
+      "status": "SUSPENDED",
+      "n": 27
+    },
+    {
+      "phase_std": "EARLY_PHASE1",
+      "status": "TERMINATED",
+      "n": 384
+    },
+    {
+      "phase_std": "EARLY_PHASE1",
+      "status": "UNKNOWN",
+      "n": 986
+    },
+    {
+      "phase_std": "EARLY_PHASE1",
+      "status": "WITHDRAWN",
+      "n": 302
+    },
+    {
+      "phase_std": "NA",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "n": 7756
+    },
+    {
+      "phase_std": "NA",
+      "status": "COMPLETED",
+      "n": 116152
+    },
+    {
+      "phase_std": "NA",
+      "status": "ENROLLING_BY_INVITATION",
+      "n": 2332
+    },
+    {
+      "phase_std": "NA",
+      "status": "NOT_YET_RECRUITING",
+      "n": 11849
+    },
+    {
+      "phase_std": "NA",
+      "status": "RECRUITING",
+      "n": 27149
+    },
+    {
+      "phase_std": "NA",
+      "status": "SUSPENDED",
+      "n": 652
+    },
+    {
+      "phase_std": "NA",
+      "status": "TERMINATED",
+      "n": 8659
+    },
+    {
+      "phase_std": "NA",
+      "status": "UNKNOWN",
+      "n": 33100
+    },
+    {
+      "phase_std": "NA",
+      "status": "WITHDRAWN",
+      "n": 5357
+    },
+    {
+      "phase_std": "PHASE1",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "n": 1601
+    },
+    {
+      "phase_std": "PHASE1",
+      "status": "COMPLETED",
+      "n": 31179
+    },
+    {
+      "phase_std": "PHASE1",
+      "status": "ENROLLING_BY_INVITATION",
+      "n": 115
+    },
+    {
+      "phase_std": "PHASE1",
+      "status": "NOT_YET_RECRUITING",
+      "n": 1062
+    },
+    {
+      "phase_std": "PHASE1",
+      "status": "RECRUITING",
+      "n": 3830
+    },
+    {
+      "phase_std": "PHASE1",
+      "status": "SUSPENDED",
+      "n": 154
+    },
+    {
+      "phase_std": "PHASE1",
+      "status": "TERMINATED",
+      "n": 3677
+    },
+    {
+      "phase_std": "PHASE1",
+      "status": "UNKNOWN",
+      "n": 3138
+    },
+    {
+      "phase_std": "PHASE1",
+      "status": "WITHDRAWN",
+      "n": 1421
+    },
+    {
+      "phase_std": "PHASE1/PHASE2",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "n": 981
+    },
+    {
+      "phase_std": "PHASE1/PHASE2",
+      "status": "COMPLETED",
+      "n": 7113
+    },
+    {
+      "phase_std": "PHASE1/PHASE2",
+      "status": "ENROLLING_BY_INVITATION",
+      "n": 69
+    },
+    {
+      "phase_std": "PHASE1/PHASE2",
+      "status": "NOT_YET_RECRUITING",
+      "n": 626
+    },
+    {
+      "phase_std": "PHASE1/PHASE2",
+      "status": "RECRUITING",
+      "n": 2437
+    },
+    {
+      "phase_std": "PHASE1/PHASE2",
+      "status": "SUSPENDED",
+      "n": 101
+    },
+    {
+      "phase_std": "PHASE1/PHASE2",
+      "status": "TERMINATED",
+      "n": 1801
+    },
+    {
+      "phase_std": "PHASE1/PHASE2",
+      "status": "UNKNOWN",
+      "n": 2192
+    },
+    {
+      "phase_std": "PHASE1/PHASE2",
+      "status": "WITHDRAWN",
+      "n": 729
+    },
+    {
+      "phase_std": "PHASE2",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "n": 3162
+    },
+    {
+      "phase_std": "PHASE2",
+      "status": "COMPLETED",
+      "n": 32663
+    },
+    {
+      "phase_std": "PHASE2",
+      "status": "ENROLLING_BY_INVITATION",
+      "n": 176
+    },
+    {
+      "phase_std": "PHASE2",
+      "status": "NOT_YET_RECRUITING",
+      "n": 2390
+    },
+    {
+      "phase_std": "PHASE2",
+      "status": "RECRUITING",
+      "n": 6927
+    },
+    {
+      "phase_std": "PHASE2",
+      "status": "SUSPENDED",
+      "n": 215
+    },
+    {
+      "phase_std": "PHASE2",
+      "status": "TERMINATED",
+      "n": 6913
+    },
+    {
+      "phase_std": "PHASE2",
+      "status": "UNKNOWN",
+      "n": 7147
+    },
+    {
+      "phase_std": "PHASE2",
+      "status": "WITHDRAWN",
+      "n": 2541
+    },
+    {
+      "phase_std": "PHASE2/PHASE3",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "n": 239
+    },
+    {
+      "phase_std": "PHASE2/PHASE3",
+      "status": "COMPLETED",
+      "n": 3677
+    },
+    {
+      "phase_std": "PHASE2/PHASE3",
+      "status": "ENROLLING_BY_INVITATION",
+      "n": 46
+    },
+    {
+      "phase_std": "PHASE2/PHASE3",
+      "status": "NOT_YET_RECRUITING",
+      "n": 260
+    },
+    {
+      "phase_std": "PHASE2/PHASE3",
+      "status": "RECRUITING",
+      "n": 687
+    },
+    {
+      "phase_std": "PHASE2/PHASE3",
+      "status": "SUSPENDED",
+      "n": 45
+    },
+    {
+      "phase_std": "PHASE2/PHASE3",
+      "status": "TERMINATED",
+      "n": 624
+    },
+    {
+      "phase_std": "PHASE2/PHASE3",
+      "status": "UNKNOWN",
+      "n": 1398
+    },
+    {
+      "phase_std": "PHASE2/PHASE3",
+      "status": "WITHDRAWN",
+      "n": 281
+    },
+    {
+      "phase_std": "PHASE3",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "n": 1901
+    },
+    {
+      "phase_std": "PHASE3",
+      "status": "COMPLETED",
+      "n": 25161
+    },
+    {
+      "phase_std": "PHASE3",
+      "status": "ENROLLING_BY_INVITATION",
+      "n": 131
+    },
+    {
+      "phase_std": "PHASE3",
+      "status": "NOT_YET_RECRUITING",
+      "n": 1168
+    },
+    {
+      "phase_std": "PHASE3",
+      "status": "RECRUITING",
+      "n": 3395
+    },
+    {
+      "phase_std": "PHASE3",
+      "status": "SUSPENDED",
+      "n": 106
+    },
+    {
+      "phase_std": "PHASE3",
+      "status": "TERMINATED",
+      "n": 3356
+    },
+    {
+      "phase_std": "PHASE3",
+      "status": "UNKNOWN",
+      "n": 4262
+    },
+    {
+      "phase_std": "PHASE3",
+      "status": "WITHDRAWN",
+      "n": 1080
+    },
+    {
+      "phase_std": "PHASE4",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "n": 580
+    },
+    {
+      "phase_std": "PHASE4",
+      "status": "COMPLETED",
+      "n": 20351
+    },
+    {
+      "phase_std": "PHASE4",
+      "status": "ENROLLING_BY_INVITATION",
+      "n": 148
+    },
+    {
+      "phase_std": "PHASE4",
+      "status": "NOT_YET_RECRUITING",
+      "n": 1015
+    },
+    {
+      "phase_std": "PHASE4",
+      "status": "RECRUITING",
+      "n": 2371
+    },
+    {
+      "phase_std": "PHASE4",
+      "status": "SUSPENDED",
+      "n": 77
+    },
+    {
+      "phase_std": "PHASE4",
+      "status": "TERMINATED",
+      "n": 2613
+    },
+    {
+      "phase_std": "PHASE4",
+      "status": "UNKNOWN",
+      "n": 5839
+    },
+    {
+      "phase_std": "PHASE4",
+      "status": "WITHDRAWN",
+      "n": 1281
+    },
+    {
+      "phase_std": "Unknown",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "n": 4824
+    },
+    {
+      "phase_std": "Unknown",
+      "status": "APPROVED_FOR_MARKETING",
+      "n": 229
+    },
+    {
+      "phase_std": "Unknown",
+      "status": "AVAILABLE",
+      "n": 258
+    },
+    {
+      "phase_std": "Unknown",
+      "status": "COMPLETED",
+      "n": 66171
+    },
+    {
+      "phase_std": "Unknown",
+      "status": "ENROLLING_BY_INVITATION",
+      "n": 1748
+    },
+    {
+      "phase_std": "Unknown",
+      "status": "NO_LONGER_AVAILABLE",
+      "n": 503
+    },
+    {
+      "phase_std": "Unknown",
+      "status": "NOT_YET_RECRUITING",
+      "n": 6198
+    },
+    {
+      "phase_std": "Unknown",
+      "status": "RECRUITING",
+      "n": 18142
+    },
+    {
+      "phase_std": "Unknown",
+      "status": "SUSPENDED",
+      "n": 312
+    },
+    {
+      "phase_std": "Unknown",
+      "status": "TEMPORARILY_NOT_AVAILABLE",
+      "n": 28
+    },
+    {
+      "phase_std": "Unknown",
+      "status": "TERMINATED",
+      "n": 4259
+    },
+    {
+      "phase_std": "Unknown",
+      "status": "UNKNOWN",
+      "n": 25330
+    },
+    {
+      "phase_std": "Unknown",
+      "status": "WITHDRAWN",
+      "n": 2756
+    },
+    {
+      "phase_std": "Unknown",
+      "status": "WITHHELD",
+      "n": 945
+    }
+  ]
+}

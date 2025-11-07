@@ -1,0 +1,2202 @@
+{
+  "meta": {
+    "as_of_utc": "2025-11-07 02:38:57.349867+00:00"
+  },
+  "data": [
+    {
+      "sponsor_name": "Ain Shams University",
+      "phase_std": "EARLY_PHASE1",
+      "n": 40
+    },
+    {
+      "sponsor_name": "Ain Shams University",
+      "phase_std": "NA",
+      "n": 689
+    },
+    {
+      "sponsor_name": "Ain Shams University",
+      "phase_std": "PHASE1",
+      "n": 46
+    },
+    {
+      "sponsor_name": "Ain Shams University",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 37
+    },
+    {
+      "sponsor_name": "Ain Shams University",
+      "phase_std": "PHASE2",
+      "n": 92
+    },
+    {
+      "sponsor_name": "Ain Shams University",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 75
+    },
+    {
+      "sponsor_name": "Ain Shams University",
+      "phase_std": "PHASE3",
+      "n": 120
+    },
+    {
+      "sponsor_name": "Ain Shams University",
+      "phase_std": "PHASE4",
+      "n": 217
+    },
+    {
+      "sponsor_name": "Ain Shams University",
+      "phase_std": "Unknown",
+      "n": 326
+    },
+    {
+      "sponsor_name": "Assistance Publique - H\u00f4pitaux de Paris",
+      "phase_std": "EARLY_PHASE1",
+      "n": 2
+    },
+    {
+      "sponsor_name": "Assistance Publique - H\u00f4pitaux de Paris",
+      "phase_std": "NA",
+      "n": 1190
+    },
+    {
+      "sponsor_name": "Assistance Publique - H\u00f4pitaux de Paris",
+      "phase_std": "PHASE1",
+      "n": 23
+    },
+    {
+      "sponsor_name": "Assistance Publique - H\u00f4pitaux de Paris",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 57
+    },
+    {
+      "sponsor_name": "Assistance Publique - H\u00f4pitaux de Paris",
+      "phase_std": "PHASE2",
+      "n": 224
+    },
+    {
+      "sponsor_name": "Assistance Publique - H\u00f4pitaux de Paris",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 47
+    },
+    {
+      "sponsor_name": "Assistance Publique - H\u00f4pitaux de Paris",
+      "phase_std": "PHASE3",
+      "n": 406
+    },
+    {
+      "sponsor_name": "Assistance Publique - H\u00f4pitaux de Paris",
+      "phase_std": "PHASE4",
+      "n": 114
+    },
+    {
+      "sponsor_name": "Assistance Publique - H\u00f4pitaux de Paris",
+      "phase_std": "Unknown",
+      "n": 1266
+    },
+    {
+      "sponsor_name": "Assiut University",
+      "phase_std": "EARLY_PHASE1",
+      "n": 56
+    },
+    {
+      "sponsor_name": "Assiut University",
+      "phase_std": "NA",
+      "n": 1082
+    },
+    {
+      "sponsor_name": "Assiut University",
+      "phase_std": "PHASE1",
+      "n": 38
+    },
+    {
+      "sponsor_name": "Assiut University",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 26
+    },
+    {
+      "sponsor_name": "Assiut University",
+      "phase_std": "PHASE2",
+      "n": 118
+    },
+    {
+      "sponsor_name": "Assiut University",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 110
+    },
+    {
+      "sponsor_name": "Assiut University",
+      "phase_std": "PHASE3",
+      "n": 100
+    },
+    {
+      "sponsor_name": "Assiut University",
+      "phase_std": "PHASE4",
+      "n": 177
+    },
+    {
+      "sponsor_name": "Assiut University",
+      "phase_std": "Unknown",
+      "n": 2641
+    },
+    {
+      "sponsor_name": "AstraZeneca",
+      "phase_std": "EARLY_PHASE1",
+      "n": 10
+    },
+    {
+      "sponsor_name": "AstraZeneca",
+      "phase_std": "NA",
+      "n": 16
+    },
+    {
+      "sponsor_name": "AstraZeneca",
+      "phase_std": "PHASE1",
+      "n": 919
+    },
+    {
+      "sponsor_name": "AstraZeneca",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 64
+    },
+    {
+      "sponsor_name": "AstraZeneca",
+      "phase_std": "PHASE2",
+      "n": 455
+    },
+    {
+      "sponsor_name": "AstraZeneca",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 18
+    },
+    {
+      "sponsor_name": "AstraZeneca",
+      "phase_std": "PHASE3",
+      "n": 760
+    },
+    {
+      "sponsor_name": "AstraZeneca",
+      "phase_std": "PHASE4",
+      "n": 188
+    },
+    {
+      "sponsor_name": "AstraZeneca",
+      "phase_std": "Unknown",
+      "n": 916
+    },
+    {
+      "sponsor_name": "Bayer",
+      "phase_std": "NA",
+      "n": 114
+    },
+    {
+      "sponsor_name": "Bayer",
+      "phase_std": "PHASE1",
+      "n": 339
+    },
+    {
+      "sponsor_name": "Bayer",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 20
+    },
+    {
+      "sponsor_name": "Bayer",
+      "phase_std": "PHASE2",
+      "n": 229
+    },
+    {
+      "sponsor_name": "Bayer",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 6
+    },
+    {
+      "sponsor_name": "Bayer",
+      "phase_std": "PHASE3",
+      "n": 316
+    },
+    {
+      "sponsor_name": "Bayer",
+      "phase_std": "PHASE4",
+      "n": 109
+    },
+    {
+      "sponsor_name": "Bayer",
+      "phase_std": "Unknown",
+      "n": 508
+    },
+    {
+      "sponsor_name": "Boehringer Ingelheim",
+      "phase_std": "EARLY_PHASE1",
+      "n": 1
+    },
+    {
+      "sponsor_name": "Boehringer Ingelheim",
+      "phase_std": "NA",
+      "n": 11
+    },
+    {
+      "sponsor_name": "Boehringer Ingelheim",
+      "phase_std": "PHASE1",
+      "n": 1030
+    },
+    {
+      "sponsor_name": "Boehringer Ingelheim",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 12
+    },
+    {
+      "sponsor_name": "Boehringer Ingelheim",
+      "phase_std": "PHASE2",
+      "n": 290
+    },
+    {
+      "sponsor_name": "Boehringer Ingelheim",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 13
+    },
+    {
+      "sponsor_name": "Boehringer Ingelheim",
+      "phase_std": "PHASE3",
+      "n": 380
+    },
+    {
+      "sponsor_name": "Boehringer Ingelheim",
+      "phase_std": "PHASE4",
+      "n": 127
+    },
+    {
+      "sponsor_name": "Boehringer Ingelheim",
+      "phase_std": "Unknown",
+      "n": 383
+    },
+    {
+      "sponsor_name": "Bristol-Myers Squibb",
+      "phase_std": "EARLY_PHASE1",
+      "n": 1
+    },
+    {
+      "sponsor_name": "Bristol-Myers Squibb",
+      "phase_std": "NA",
+      "n": 24
+    },
+    {
+      "sponsor_name": "Bristol-Myers Squibb",
+      "phase_std": "PHASE1",
+      "n": 469
+    },
+    {
+      "sponsor_name": "Bristol-Myers Squibb",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 100
+    },
+    {
+      "sponsor_name": "Bristol-Myers Squibb",
+      "phase_std": "PHASE2",
+      "n": 275
+    },
+    {
+      "sponsor_name": "Bristol-Myers Squibb",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 25
+    },
+    {
+      "sponsor_name": "Bristol-Myers Squibb",
+      "phase_std": "PHASE3",
+      "n": 250
+    },
+    {
+      "sponsor_name": "Bristol-Myers Squibb",
+      "phase_std": "PHASE4",
+      "n": 52
+    },
+    {
+      "sponsor_name": "Bristol-Myers Squibb",
+      "phase_std": "Unknown",
+      "n": 308
+    },
+    {
+      "sponsor_name": "Cairo University",
+      "phase_std": "EARLY_PHASE1",
+      "n": 70
+    },
+    {
+      "sponsor_name": "Cairo University",
+      "phase_std": "NA",
+      "n": 2707
+    },
+    {
+      "sponsor_name": "Cairo University",
+      "phase_std": "PHASE1",
+      "n": 59
+    },
+    {
+      "sponsor_name": "Cairo University",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 28
+    },
+    {
+      "sponsor_name": "Cairo University",
+      "phase_std": "PHASE2",
+      "n": 77
+    },
+    {
+      "sponsor_name": "Cairo University",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 53
+    },
+    {
+      "sponsor_name": "Cairo University",
+      "phase_std": "PHASE3",
+      "n": 140
+    },
+    {
+      "sponsor_name": "Cairo University",
+      "phase_std": "PHASE4",
+      "n": 216
+    },
+    {
+      "sponsor_name": "Cairo University",
+      "phase_std": "Unknown",
+      "n": 774
+    },
+    {
+      "sponsor_name": "Chinese University of Hong Kong",
+      "phase_std": "EARLY_PHASE1",
+      "n": 2
+    },
+    {
+      "sponsor_name": "Chinese University of Hong Kong",
+      "phase_std": "NA",
+      "n": 690
+    },
+    {
+      "sponsor_name": "Chinese University of Hong Kong",
+      "phase_std": "PHASE1",
+      "n": 3
+    },
+    {
+      "sponsor_name": "Chinese University of Hong Kong",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 11
+    },
+    {
+      "sponsor_name": "Chinese University of Hong Kong",
+      "phase_std": "PHASE2",
+      "n": 69
+    },
+    {
+      "sponsor_name": "Chinese University of Hong Kong",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 22
+    },
+    {
+      "sponsor_name": "Chinese University of Hong Kong",
+      "phase_std": "PHASE3",
+      "n": 71
+    },
+    {
+      "sponsor_name": "Chinese University of Hong Kong",
+      "phase_std": "PHASE4",
+      "n": 61
+    },
+    {
+      "sponsor_name": "Chinese University of Hong Kong",
+      "phase_std": "Unknown",
+      "n": 391
+    },
+    {
+      "sponsor_name": "Duke University",
+      "phase_std": "EARLY_PHASE1",
+      "n": 16
+    },
+    {
+      "sponsor_name": "Duke University",
+      "phase_std": "NA",
+      "n": 1016
+    },
+    {
+      "sponsor_name": "Duke University",
+      "phase_std": "PHASE1",
+      "n": 92
+    },
+    {
+      "sponsor_name": "Duke University",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 38
+    },
+    {
+      "sponsor_name": "Duke University",
+      "phase_std": "PHASE2",
+      "n": 184
+    },
+    {
+      "sponsor_name": "Duke University",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 18
+    },
+    {
+      "sponsor_name": "Duke University",
+      "phase_std": "PHASE3",
+      "n": 40
+    },
+    {
+      "sponsor_name": "Duke University",
+      "phase_std": "PHASE4",
+      "n": 155
+    },
+    {
+      "sponsor_name": "Duke University",
+      "phase_std": "Unknown",
+      "n": 418
+    },
+    {
+      "sponsor_name": "Eli Lilly and Company",
+      "phase_std": "EARLY_PHASE1",
+      "n": 1
+    },
+    {
+      "sponsor_name": "Eli Lilly and Company",
+      "phase_std": "NA",
+      "n": 11
+    },
+    {
+      "sponsor_name": "Eli Lilly and Company",
+      "phase_std": "PHASE1",
+      "n": 742
+    },
+    {
+      "sponsor_name": "Eli Lilly and Company",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 51
+    },
+    {
+      "sponsor_name": "Eli Lilly and Company",
+      "phase_std": "PHASE2",
+      "n": 446
+    },
+    {
+      "sponsor_name": "Eli Lilly and Company",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 19
+    },
+    {
+      "sponsor_name": "Eli Lilly and Company",
+      "phase_std": "PHASE3",
+      "n": 515
+    },
+    {
+      "sponsor_name": "Eli Lilly and Company",
+      "phase_std": "PHASE4",
+      "n": 169
+    },
+    {
+      "sponsor_name": "Eli Lilly and Company",
+      "phase_std": "Unknown",
+      "n": 44
+    },
+    {
+      "sponsor_name": "Emory University",
+      "phase_std": "EARLY_PHASE1",
+      "n": 25
+    },
+    {
+      "sponsor_name": "Emory University",
+      "phase_std": "NA",
+      "n": 567
+    },
+    {
+      "sponsor_name": "Emory University",
+      "phase_std": "PHASE1",
+      "n": 115
+    },
+    {
+      "sponsor_name": "Emory University",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 28
+    },
+    {
+      "sponsor_name": "Emory University",
+      "phase_std": "PHASE2",
+      "n": 194
+    },
+    {
+      "sponsor_name": "Emory University",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 14
+    },
+    {
+      "sponsor_name": "Emory University",
+      "phase_std": "PHASE3",
+      "n": 42
+    },
+    {
+      "sponsor_name": "Emory University",
+      "phase_std": "PHASE4",
+      "n": 150
+    },
+    {
+      "sponsor_name": "Emory University",
+      "phase_std": "Unknown",
+      "n": 218
+    },
+    {
+      "sponsor_name": "GlaxoSmithKline",
+      "phase_std": "NA",
+      "n": 112
+    },
+    {
+      "sponsor_name": "GlaxoSmithKline",
+      "phase_std": "PHASE1",
+      "n": 1019
+    },
+    {
+      "sponsor_name": "GlaxoSmithKline",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 48
+    },
+    {
+      "sponsor_name": "GlaxoSmithKline",
+      "phase_std": "PHASE2",
+      "n": 791
+    },
+    {
+      "sponsor_name": "GlaxoSmithKline",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 3
+    },
+    {
+      "sponsor_name": "GlaxoSmithKline",
+      "phase_std": "PHASE3",
+      "n": 871
+    },
+    {
+      "sponsor_name": "GlaxoSmithKline",
+      "phase_std": "PHASE4",
+      "n": 322
+    },
+    {
+      "sponsor_name": "GlaxoSmithKline",
+      "phase_std": "Unknown",
+      "n": 402
+    },
+    {
+      "sponsor_name": "Hoffmann-La Roche",
+      "phase_std": "EARLY_PHASE1",
+      "n": 1
+    },
+    {
+      "sponsor_name": "Hoffmann-La Roche",
+      "phase_std": "NA",
+      "n": 43
+    },
+    {
+      "sponsor_name": "Hoffmann-La Roche",
+      "phase_std": "PHASE1",
+      "n": 414
+    },
+    {
+      "sponsor_name": "Hoffmann-La Roche",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 65
+    },
+    {
+      "sponsor_name": "Hoffmann-La Roche",
+      "phase_std": "PHASE2",
+      "n": 392
+    },
+    {
+      "sponsor_name": "Hoffmann-La Roche",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 10
+    },
+    {
+      "sponsor_name": "Hoffmann-La Roche",
+      "phase_std": "PHASE3",
+      "n": 549
+    },
+    {
+      "sponsor_name": "Hoffmann-La Roche",
+      "phase_std": "PHASE4",
+      "n": 208
+    },
+    {
+      "sponsor_name": "Hoffmann-La Roche",
+      "phase_std": "Unknown",
+      "n": 360
+    },
+    {
+      "sponsor_name": "Hospices Civils de Lyon",
+      "phase_std": "EARLY_PHASE1",
+      "n": 1
+    },
+    {
+      "sponsor_name": "Hospices Civils de Lyon",
+      "phase_std": "NA",
+      "n": 715
+    },
+    {
+      "sponsor_name": "Hospices Civils de Lyon",
+      "phase_std": "PHASE1",
+      "n": 8
+    },
+    {
+      "sponsor_name": "Hospices Civils de Lyon",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 11
+    },
+    {
+      "sponsor_name": "Hospices Civils de Lyon",
+      "phase_std": "PHASE2",
+      "n": 62
+    },
+    {
+      "sponsor_name": "Hospices Civils de Lyon",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 7
+    },
+    {
+      "sponsor_name": "Hospices Civils de Lyon",
+      "phase_std": "PHASE3",
+      "n": 68
+    },
+    {
+      "sponsor_name": "Hospices Civils de Lyon",
+      "phase_std": "PHASE4",
+      "n": 28
+    },
+    {
+      "sponsor_name": "Hospices Civils de Lyon",
+      "phase_std": "Unknown",
+      "n": 844
+    },
+    {
+      "sponsor_name": "Johns Hopkins University",
+      "phase_std": "EARLY_PHASE1",
+      "n": 43
+    },
+    {
+      "sponsor_name": "Johns Hopkins University",
+      "phase_std": "NA",
+      "n": 881
+    },
+    {
+      "sponsor_name": "Johns Hopkins University",
+      "phase_std": "PHASE1",
+      "n": 137
+    },
+    {
+      "sponsor_name": "Johns Hopkins University",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 48
+    },
+    {
+      "sponsor_name": "Johns Hopkins University",
+      "phase_std": "PHASE2",
+      "n": 192
+    },
+    {
+      "sponsor_name": "Johns Hopkins University",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 32
+    },
+    {
+      "sponsor_name": "Johns Hopkins University",
+      "phase_std": "PHASE3",
+      "n": 53
+    },
+    {
+      "sponsor_name": "Johns Hopkins University",
+      "phase_std": "PHASE4",
+      "n": 101
+    },
+    {
+      "sponsor_name": "Johns Hopkins University",
+      "phase_std": "Unknown",
+      "n": 255
+    },
+    {
+      "sponsor_name": "Massachusetts General Hospital",
+      "phase_std": "EARLY_PHASE1",
+      "n": 49
+    },
+    {
+      "sponsor_name": "Massachusetts General Hospital",
+      "phase_std": "NA",
+      "n": 1184
+    },
+    {
+      "sponsor_name": "Massachusetts General Hospital",
+      "phase_std": "PHASE1",
+      "n": 139
+    },
+    {
+      "sponsor_name": "Massachusetts General Hospital",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 70
+    },
+    {
+      "sponsor_name": "Massachusetts General Hospital",
+      "phase_std": "PHASE2",
+      "n": 309
+    },
+    {
+      "sponsor_name": "Massachusetts General Hospital",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 22
+    },
+    {
+      "sponsor_name": "Massachusetts General Hospital",
+      "phase_std": "PHASE3",
+      "n": 73
+    },
+    {
+      "sponsor_name": "Massachusetts General Hospital",
+      "phase_std": "PHASE4",
+      "n": 220
+    },
+    {
+      "sponsor_name": "Massachusetts General Hospital",
+      "phase_std": "Unknown",
+      "n": 394
+    },
+    {
+      "sponsor_name": "Mayo Clinic",
+      "phase_std": "EARLY_PHASE1",
+      "n": 91
+    },
+    {
+      "sponsor_name": "Mayo Clinic",
+      "phase_std": "NA",
+      "n": 1205
+    },
+    {
+      "sponsor_name": "Mayo Clinic",
+      "phase_std": "PHASE1",
+      "n": 273
+    },
+    {
+      "sponsor_name": "Mayo Clinic",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 100
+    },
+    {
+      "sponsor_name": "Mayo Clinic",
+      "phase_std": "PHASE2",
+      "n": 367
+    },
+    {
+      "sponsor_name": "Mayo Clinic",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 45
+    },
+    {
+      "sponsor_name": "Mayo Clinic",
+      "phase_std": "PHASE3",
+      "n": 93
+    },
+    {
+      "sponsor_name": "Mayo Clinic",
+      "phase_std": "PHASE4",
+      "n": 178
+    },
+    {
+      "sponsor_name": "Mayo Clinic",
+      "phase_std": "Unknown",
+      "n": 756
+    },
+    {
+      "sponsor_name": "M.D. Anderson Cancer Center",
+      "phase_std": "EARLY_PHASE1",
+      "n": 72
+    },
+    {
+      "sponsor_name": "M.D. Anderson Cancer Center",
+      "phase_std": "NA",
+      "n": 455
+    },
+    {
+      "sponsor_name": "M.D. Anderson Cancer Center",
+      "phase_std": "PHASE1",
+      "n": 459
+    },
+    {
+      "sponsor_name": "M.D. Anderson Cancer Center",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 273
+    },
+    {
+      "sponsor_name": "M.D. Anderson Cancer Center",
+      "phase_std": "PHASE2",
+      "n": 1003
+    },
+    {
+      "sponsor_name": "M.D. Anderson Cancer Center",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 29
+    },
+    {
+      "sponsor_name": "M.D. Anderson Cancer Center",
+      "phase_std": "PHASE3",
+      "n": 103
+    },
+    {
+      "sponsor_name": "M.D. Anderson Cancer Center",
+      "phase_std": "PHASE4",
+      "n": 29
+    },
+    {
+      "sponsor_name": "M.D. Anderson Cancer Center",
+      "phase_std": "Unknown",
+      "n": 500
+    },
+    {
+      "sponsor_name": "Memorial Sloan Kettering Cancer Center",
+      "phase_std": "EARLY_PHASE1",
+      "n": 37
+    },
+    {
+      "sponsor_name": "Memorial Sloan Kettering Cancer Center",
+      "phase_std": "NA",
+      "n": 288
+    },
+    {
+      "sponsor_name": "Memorial Sloan Kettering Cancer Center",
+      "phase_std": "PHASE1",
+      "n": 318
+    },
+    {
+      "sponsor_name": "Memorial Sloan Kettering Cancer Center",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 108
+    },
+    {
+      "sponsor_name": "Memorial Sloan Kettering Cancer Center",
+      "phase_std": "PHASE2",
+      "n": 626
+    },
+    {
+      "sponsor_name": "Memorial Sloan Kettering Cancer Center",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 4
+    },
+    {
+      "sponsor_name": "Memorial Sloan Kettering Cancer Center",
+      "phase_std": "PHASE3",
+      "n": 66
+    },
+    {
+      "sponsor_name": "Memorial Sloan Kettering Cancer Center",
+      "phase_std": "PHASE4",
+      "n": 7
+    },
+    {
+      "sponsor_name": "Memorial Sloan Kettering Cancer Center",
+      "phase_std": "Unknown",
+      "n": 431
+    },
+    {
+      "sponsor_name": "Merck Sharp & Dohme LLC",
+      "phase_std": "EARLY_PHASE1",
+      "n": 1
+    },
+    {
+      "sponsor_name": "Merck Sharp & Dohme LLC",
+      "phase_std": "NA",
+      "n": 17
+    },
+    {
+      "sponsor_name": "Merck Sharp & Dohme LLC",
+      "phase_std": "PHASE1",
+      "n": 602
+    },
+    {
+      "sponsor_name": "Merck Sharp & Dohme LLC",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 60
+    },
+    {
+      "sponsor_name": "Merck Sharp & Dohme LLC",
+      "phase_std": "PHASE2",
+      "n": 447
+    },
+    {
+      "sponsor_name": "Merck Sharp & Dohme LLC",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 25
+    },
+    {
+      "sponsor_name": "Merck Sharp & Dohme LLC",
+      "phase_std": "PHASE3",
+      "n": 698
+    },
+    {
+      "sponsor_name": "Merck Sharp & Dohme LLC",
+      "phase_std": "PHASE4",
+      "n": 91
+    },
+    {
+      "sponsor_name": "Merck Sharp & Dohme LLC",
+      "phase_std": "Unknown",
+      "n": 136
+    },
+    {
+      "sponsor_name": "National Cancer Institute (NCI)",
+      "phase_std": "EARLY_PHASE1",
+      "n": 19
+    },
+    {
+      "sponsor_name": "National Cancer Institute (NCI)",
+      "phase_std": "NA",
+      "n": 54
+    },
+    {
+      "sponsor_name": "National Cancer Institute (NCI)",
+      "phase_std": "PHASE1",
+      "n": 932
+    },
+    {
+      "sponsor_name": "National Cancer Institute (NCI)",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 311
+    },
+    {
+      "sponsor_name": "National Cancer Institute (NCI)",
+      "phase_std": "PHASE2",
+      "n": 1487
+    },
+    {
+      "sponsor_name": "National Cancer Institute (NCI)",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 28
+    },
+    {
+      "sponsor_name": "National Cancer Institute (NCI)",
+      "phase_std": "PHASE3",
+      "n": 199
+    },
+    {
+      "sponsor_name": "National Cancer Institute (NCI)",
+      "phase_std": "PHASE4",
+      "n": 2
+    },
+    {
+      "sponsor_name": "National Cancer Institute (NCI)",
+      "phase_std": "Unknown",
+      "n": 481
+    },
+    {
+      "sponsor_name": "National Institute of Allergy and Infectious Diseases (NIAID)",
+      "phase_std": "EARLY_PHASE1",
+      "n": 16
+    },
+    {
+      "sponsor_name": "National Institute of Allergy and Infectious Diseases (NIAID)",
+      "phase_std": "NA",
+      "n": 176
+    },
+    {
+      "sponsor_name": "National Institute of Allergy and Infectious Diseases (NIAID)",
+      "phase_std": "PHASE1",
+      "n": 796
+    },
+    {
+      "sponsor_name": "National Institute of Allergy and Infectious Diseases (NIAID)",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 151
+    },
+    {
+      "sponsor_name": "National Institute of Allergy and Infectious Diseases (NIAID)",
+      "phase_std": "PHASE2",
+      "n": 519
+    },
+    {
+      "sponsor_name": "National Institute of Allergy and Infectious Diseases (NIAID)",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 13
+    },
+    {
+      "sponsor_name": "National Institute of Allergy and Infectious Diseases (NIAID)",
+      "phase_std": "PHASE3",
+      "n": 157
+    },
+    {
+      "sponsor_name": "National Institute of Allergy and Infectious Diseases (NIAID)",
+      "phase_std": "PHASE4",
+      "n": 60
+    },
+    {
+      "sponsor_name": "National Institute of Allergy and Infectious Diseases (NIAID)",
+      "phase_std": "Unknown",
+      "n": 531
+    },
+    {
+      "sponsor_name": "National Taiwan University Hospital",
+      "phase_std": "EARLY_PHASE1",
+      "n": 4
+    },
+    {
+      "sponsor_name": "National Taiwan University Hospital",
+      "phase_std": "NA",
+      "n": 871
+    },
+    {
+      "sponsor_name": "National Taiwan University Hospital",
+      "phase_std": "PHASE1",
+      "n": 45
+    },
+    {
+      "sponsor_name": "National Taiwan University Hospital",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 24
+    },
+    {
+      "sponsor_name": "National Taiwan University Hospital",
+      "phase_std": "PHASE2",
+      "n": 100
+    },
+    {
+      "sponsor_name": "National Taiwan University Hospital",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 15
+    },
+    {
+      "sponsor_name": "National Taiwan University Hospital",
+      "phase_std": "PHASE3",
+      "n": 50
+    },
+    {
+      "sponsor_name": "National Taiwan University Hospital",
+      "phase_std": "PHASE4",
+      "n": 158
+    },
+    {
+      "sponsor_name": "National Taiwan University Hospital",
+      "phase_std": "Unknown",
+      "n": 1186
+    },
+    {
+      "sponsor_name": "Northwestern University",
+      "phase_std": "EARLY_PHASE1",
+      "n": 46
+    },
+    {
+      "sponsor_name": "Northwestern University",
+      "phase_std": "NA",
+      "n": 644
+    },
+    {
+      "sponsor_name": "Northwestern University",
+      "phase_std": "PHASE1",
+      "n": 68
+    },
+    {
+      "sponsor_name": "Northwestern University",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 42
+    },
+    {
+      "sponsor_name": "Northwestern University",
+      "phase_std": "PHASE2",
+      "n": 181
+    },
+    {
+      "sponsor_name": "Northwestern University",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 10
+    },
+    {
+      "sponsor_name": "Northwestern University",
+      "phase_std": "PHASE3",
+      "n": 40
+    },
+    {
+      "sponsor_name": "Northwestern University",
+      "phase_std": "PHASE4",
+      "n": 90
+    },
+    {
+      "sponsor_name": "Northwestern University",
+      "phase_std": "Unknown",
+      "n": 231
+    },
+    {
+      "sponsor_name": "Novartis Pharmaceuticals",
+      "phase_std": "EARLY_PHASE1",
+      "n": 2
+    },
+    {
+      "sponsor_name": "Novartis Pharmaceuticals",
+      "phase_std": "NA",
+      "n": 8
+    },
+    {
+      "sponsor_name": "Novartis Pharmaceuticals",
+      "phase_std": "PHASE1",
+      "n": 383
+    },
+    {
+      "sponsor_name": "Novartis Pharmaceuticals",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 106
+    },
+    {
+      "sponsor_name": "Novartis Pharmaceuticals",
+      "phase_std": "PHASE2",
+      "n": 679
+    },
+    {
+      "sponsor_name": "Novartis Pharmaceuticals",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 28
+    },
+    {
+      "sponsor_name": "Novartis Pharmaceuticals",
+      "phase_std": "PHASE3",
+      "n": 693
+    },
+    {
+      "sponsor_name": "Novartis Pharmaceuticals",
+      "phase_std": "PHASE4",
+      "n": 338
+    },
+    {
+      "sponsor_name": "Novartis Pharmaceuticals",
+      "phase_std": "Unknown",
+      "n": 323
+    },
+    {
+      "sponsor_name": "Novo Nordisk A/S",
+      "phase_std": "EARLY_PHASE1",
+      "n": 1
+    },
+    {
+      "sponsor_name": "Novo Nordisk A/S",
+      "phase_std": "NA",
+      "n": 2
+    },
+    {
+      "sponsor_name": "Novo Nordisk A/S",
+      "phase_std": "PHASE1",
+      "n": 432
+    },
+    {
+      "sponsor_name": "Novo Nordisk A/S",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 1
+    },
+    {
+      "sponsor_name": "Novo Nordisk A/S",
+      "phase_std": "PHASE2",
+      "n": 102
+    },
+    {
+      "sponsor_name": "Novo Nordisk A/S",
+      "phase_std": "PHASE3",
+      "n": 337
+    },
+    {
+      "sponsor_name": "Novo Nordisk A/S",
+      "phase_std": "PHASE4",
+      "n": 104
+    },
+    {
+      "sponsor_name": "Novo Nordisk A/S",
+      "phase_std": "Unknown",
+      "n": 341
+    },
+    {
+      "sponsor_name": "NYU Langone Health",
+      "phase_std": "EARLY_PHASE1",
+      "n": 19
+    },
+    {
+      "sponsor_name": "NYU Langone Health",
+      "phase_std": "NA",
+      "n": 717
+    },
+    {
+      "sponsor_name": "NYU Langone Health",
+      "phase_std": "PHASE1",
+      "n": 66
+    },
+    {
+      "sponsor_name": "NYU Langone Health",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 29
+    },
+    {
+      "sponsor_name": "NYU Langone Health",
+      "phase_std": "PHASE2",
+      "n": 147
+    },
+    {
+      "sponsor_name": "NYU Langone Health",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 6
+    },
+    {
+      "sponsor_name": "NYU Langone Health",
+      "phase_std": "PHASE3",
+      "n": 33
+    },
+    {
+      "sponsor_name": "NYU Langone Health",
+      "phase_std": "PHASE4",
+      "n": 110
+    },
+    {
+      "sponsor_name": "NYU Langone Health",
+      "phase_std": "Unknown",
+      "n": 213
+    },
+    {
+      "sponsor_name": "Pfizer",
+      "phase_std": "EARLY_PHASE1",
+      "n": 2
+    },
+    {
+      "sponsor_name": "Pfizer",
+      "phase_std": "NA",
+      "n": 53
+    },
+    {
+      "sponsor_name": "Pfizer",
+      "phase_std": "PHASE1",
+      "n": 1073
+    },
+    {
+      "sponsor_name": "Pfizer",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 57
+    },
+    {
+      "sponsor_name": "Pfizer",
+      "phase_std": "PHASE2",
+      "n": 597
+    },
+    {
+      "sponsor_name": "Pfizer",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 36
+    },
+    {
+      "sponsor_name": "Pfizer",
+      "phase_std": "PHASE3",
+      "n": 601
+    },
+    {
+      "sponsor_name": "Pfizer",
+      "phase_std": "PHASE4",
+      "n": 217
+    },
+    {
+      "sponsor_name": "Pfizer",
+      "phase_std": "Unknown",
+      "n": 569
+    },
+    {
+      "sponsor_name": "Riphah International University",
+      "phase_std": "NA",
+      "n": 1660
+    },
+    {
+      "sponsor_name": "Riphah International University",
+      "phase_std": "PHASE1",
+      "n": 1
+    },
+    {
+      "sponsor_name": "Riphah International University",
+      "phase_std": "Unknown",
+      "n": 113
+    },
+    {
+      "sponsor_name": "Sanofi",
+      "phase_std": "NA",
+      "n": 7
+    },
+    {
+      "sponsor_name": "Sanofi",
+      "phase_std": "PHASE1",
+      "n": 219
+    },
+    {
+      "sponsor_name": "Sanofi",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 46
+    },
+    {
+      "sponsor_name": "Sanofi",
+      "phase_std": "PHASE2",
+      "n": 297
+    },
+    {
+      "sponsor_name": "Sanofi",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 14
+    },
+    {
+      "sponsor_name": "Sanofi",
+      "phase_std": "PHASE3",
+      "n": 545
+    },
+    {
+      "sponsor_name": "Sanofi",
+      "phase_std": "PHASE4",
+      "n": 279
+    },
+    {
+      "sponsor_name": "Sanofi",
+      "phase_std": "Unknown",
+      "n": 85
+    },
+    {
+      "sponsor_name": "Seoul National University Hospital",
+      "phase_std": "EARLY_PHASE1",
+      "n": 12
+    },
+    {
+      "sponsor_name": "Seoul National University Hospital",
+      "phase_std": "NA",
+      "n": 837
+    },
+    {
+      "sponsor_name": "Seoul National University Hospital",
+      "phase_std": "PHASE1",
+      "n": 64
+    },
+    {
+      "sponsor_name": "Seoul National University Hospital",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 21
+    },
+    {
+      "sponsor_name": "Seoul National University Hospital",
+      "phase_std": "PHASE2",
+      "n": 150
+    },
+    {
+      "sponsor_name": "Seoul National University Hospital",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 16
+    },
+    {
+      "sponsor_name": "Seoul National University Hospital",
+      "phase_std": "PHASE3",
+      "n": 69
+    },
+    {
+      "sponsor_name": "Seoul National University Hospital",
+      "phase_std": "PHASE4",
+      "n": 199
+    },
+    {
+      "sponsor_name": "Seoul National University Hospital",
+      "phase_std": "Unknown",
+      "n": 457
+    },
+    {
+      "sponsor_name": "Stanford University",
+      "phase_std": "EARLY_PHASE1",
+      "n": 35
+    },
+    {
+      "sponsor_name": "Stanford University",
+      "phase_std": "NA",
+      "n": 1033
+    },
+    {
+      "sponsor_name": "Stanford University",
+      "phase_std": "PHASE1",
+      "n": 124
+    },
+    {
+      "sponsor_name": "Stanford University",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 59
+    },
+    {
+      "sponsor_name": "Stanford University",
+      "phase_std": "PHASE2",
+      "n": 207
+    },
+    {
+      "sponsor_name": "Stanford University",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 21
+    },
+    {
+      "sponsor_name": "Stanford University",
+      "phase_std": "PHASE3",
+      "n": 60
+    },
+    {
+      "sponsor_name": "Stanford University",
+      "phase_std": "PHASE4",
+      "n": 107
+    },
+    {
+      "sponsor_name": "Stanford University",
+      "phase_std": "Unknown",
+      "n": 405
+    },
+    {
+      "sponsor_name": "Sun Yat-sen University",
+      "phase_std": "EARLY_PHASE1",
+      "n": 13
+    },
+    {
+      "sponsor_name": "Sun Yat-sen University",
+      "phase_std": "NA",
+      "n": 284
+    },
+    {
+      "sponsor_name": "Sun Yat-sen University",
+      "phase_std": "PHASE1",
+      "n": 31
+    },
+    {
+      "sponsor_name": "Sun Yat-sen University",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 47
+    },
+    {
+      "sponsor_name": "Sun Yat-sen University",
+      "phase_std": "PHASE2",
+      "n": 486
+    },
+    {
+      "sponsor_name": "Sun Yat-sen University",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 30
+    },
+    {
+      "sponsor_name": "Sun Yat-sen University",
+      "phase_std": "PHASE3",
+      "n": 235
+    },
+    {
+      "sponsor_name": "Sun Yat-sen University",
+      "phase_std": "PHASE4",
+      "n": 71
+    },
+    {
+      "sponsor_name": "Sun Yat-sen University",
+      "phase_std": "Unknown",
+      "n": 313
+    },
+    {
+      "sponsor_name": "University Health Network, Toronto",
+      "phase_std": "EARLY_PHASE1",
+      "n": 7
+    },
+    {
+      "sponsor_name": "University Health Network, Toronto",
+      "phase_std": "NA",
+      "n": 548
+    },
+    {
+      "sponsor_name": "University Health Network, Toronto",
+      "phase_std": "PHASE1",
+      "n": 70
+    },
+    {
+      "sponsor_name": "University Health Network, Toronto",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 41
+    },
+    {
+      "sponsor_name": "University Health Network, Toronto",
+      "phase_std": "PHASE2",
+      "n": 218
+    },
+    {
+      "sponsor_name": "University Health Network, Toronto",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 25
+    },
+    {
+      "sponsor_name": "University Health Network, Toronto",
+      "phase_std": "PHASE3",
+      "n": 67
+    },
+    {
+      "sponsor_name": "University Health Network, Toronto",
+      "phase_std": "PHASE4",
+      "n": 79
+    },
+    {
+      "sponsor_name": "University Health Network, Toronto",
+      "phase_std": "Unknown",
+      "n": 316
+    },
+    {
+      "sponsor_name": "University of Aarhus",
+      "phase_std": "EARLY_PHASE1",
+      "n": 10
+    },
+    {
+      "sponsor_name": "University of Aarhus",
+      "phase_std": "NA",
+      "n": 680
+    },
+    {
+      "sponsor_name": "University of Aarhus",
+      "phase_std": "PHASE1",
+      "n": 12
+    },
+    {
+      "sponsor_name": "University of Aarhus",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 18
+    },
+    {
+      "sponsor_name": "University of Aarhus",
+      "phase_std": "PHASE2",
+      "n": 49
+    },
+    {
+      "sponsor_name": "University of Aarhus",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 13
+    },
+    {
+      "sponsor_name": "University of Aarhus",
+      "phase_std": "PHASE3",
+      "n": 28
+    },
+    {
+      "sponsor_name": "University of Aarhus",
+      "phase_std": "PHASE4",
+      "n": 84
+    },
+    {
+      "sponsor_name": "University of Aarhus",
+      "phase_std": "Unknown",
+      "n": 352
+    },
+    {
+      "sponsor_name": "University of Alabama at Birmingham",
+      "phase_std": "EARLY_PHASE1",
+      "n": 43
+    },
+    {
+      "sponsor_name": "University of Alabama at Birmingham",
+      "phase_std": "NA",
+      "n": 720
+    },
+    {
+      "sponsor_name": "University of Alabama at Birmingham",
+      "phase_std": "PHASE1",
+      "n": 72
+    },
+    {
+      "sponsor_name": "University of Alabama at Birmingham",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 39
+    },
+    {
+      "sponsor_name": "University of Alabama at Birmingham",
+      "phase_std": "PHASE2",
+      "n": 123
+    },
+    {
+      "sponsor_name": "University of Alabama at Birmingham",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 19
+    },
+    {
+      "sponsor_name": "University of Alabama at Birmingham",
+      "phase_std": "PHASE3",
+      "n": 34
+    },
+    {
+      "sponsor_name": "University of Alabama at Birmingham",
+      "phase_std": "PHASE4",
+      "n": 91
+    },
+    {
+      "sponsor_name": "University of Alabama at Birmingham",
+      "phase_std": "Unknown",
+      "n": 195
+    },
+    {
+      "sponsor_name": "University of British Columbia",
+      "phase_std": "EARLY_PHASE1",
+      "n": 10
+    },
+    {
+      "sponsor_name": "University of British Columbia",
+      "phase_std": "NA",
+      "n": 742
+    },
+    {
+      "sponsor_name": "University of British Columbia",
+      "phase_std": "PHASE1",
+      "n": 29
+    },
+    {
+      "sponsor_name": "University of British Columbia",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 17
+    },
+    {
+      "sponsor_name": "University of British Columbia",
+      "phase_std": "PHASE2",
+      "n": 64
+    },
+    {
+      "sponsor_name": "University of British Columbia",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 22
+    },
+    {
+      "sponsor_name": "University of British Columbia",
+      "phase_std": "PHASE3",
+      "n": 57
+    },
+    {
+      "sponsor_name": "University of British Columbia",
+      "phase_std": "PHASE4",
+      "n": 77
+    },
+    {
+      "sponsor_name": "University of British Columbia",
+      "phase_std": "Unknown",
+      "n": 252
+    },
+    {
+      "sponsor_name": "University of California, San Francisco",
+      "phase_std": "EARLY_PHASE1",
+      "n": 26
+    },
+    {
+      "sponsor_name": "University of California, San Francisco",
+      "phase_std": "NA",
+      "n": 1040
+    },
+    {
+      "sponsor_name": "University of California, San Francisco",
+      "phase_std": "PHASE1",
+      "n": 141
+    },
+    {
+      "sponsor_name": "University of California, San Francisco",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 50
+    },
+    {
+      "sponsor_name": "University of California, San Francisco",
+      "phase_std": "PHASE2",
+      "n": 170
+    },
+    {
+      "sponsor_name": "University of California, San Francisco",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 23
+    },
+    {
+      "sponsor_name": "University of California, San Francisco",
+      "phase_std": "PHASE3",
+      "n": 64
+    },
+    {
+      "sponsor_name": "University of California, San Francisco",
+      "phase_std": "PHASE4",
+      "n": 184
+    },
+    {
+      "sponsor_name": "University of California, San Francisco",
+      "phase_std": "Unknown",
+      "n": 350
+    },
+    {
+      "sponsor_name": "University of Colorado, Denver",
+      "phase_std": "EARLY_PHASE1",
+      "n": 26
+    },
+    {
+      "sponsor_name": "University of Colorado, Denver",
+      "phase_std": "NA",
+      "n": 693
+    },
+    {
+      "sponsor_name": "University of Colorado, Denver",
+      "phase_std": "PHASE1",
+      "n": 70
+    },
+    {
+      "sponsor_name": "University of Colorado, Denver",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 28
+    },
+    {
+      "sponsor_name": "University of Colorado, Denver",
+      "phase_std": "PHASE2",
+      "n": 141
+    },
+    {
+      "sponsor_name": "University of Colorado, Denver",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 8
+    },
+    {
+      "sponsor_name": "University of Colorado, Denver",
+      "phase_std": "PHASE3",
+      "n": 40
+    },
+    {
+      "sponsor_name": "University of Colorado, Denver",
+      "phase_std": "PHASE4",
+      "n": 95
+    },
+    {
+      "sponsor_name": "University of Colorado, Denver",
+      "phase_std": "Unknown",
+      "n": 367
+    },
+    {
+      "sponsor_name": "University of Michigan",
+      "phase_std": "EARLY_PHASE1",
+      "n": 17
+    },
+    {
+      "sponsor_name": "University of Michigan",
+      "phase_std": "NA",
+      "n": 934
+    },
+    {
+      "sponsor_name": "University of Michigan",
+      "phase_std": "PHASE1",
+      "n": 31
+    },
+    {
+      "sponsor_name": "University of Michigan",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 33
+    },
+    {
+      "sponsor_name": "University of Michigan",
+      "phase_std": "PHASE2",
+      "n": 69
+    },
+    {
+      "sponsor_name": "University of Michigan",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 15
+    },
+    {
+      "sponsor_name": "University of Michigan",
+      "phase_std": "PHASE3",
+      "n": 28
+    },
+    {
+      "sponsor_name": "University of Michigan",
+      "phase_std": "PHASE4",
+      "n": 75
+    },
+    {
+      "sponsor_name": "University of Michigan",
+      "phase_std": "Unknown",
+      "n": 231
+    },
+    {
+      "sponsor_name": "University of North Carolina, Chapel Hill",
+      "phase_std": "EARLY_PHASE1",
+      "n": 17
+    },
+    {
+      "sponsor_name": "University of North Carolina, Chapel Hill",
+      "phase_std": "NA",
+      "n": 759
+    },
+    {
+      "sponsor_name": "University of North Carolina, Chapel Hill",
+      "phase_std": "PHASE1",
+      "n": 88
+    },
+    {
+      "sponsor_name": "University of North Carolina, Chapel Hill",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 19
+    },
+    {
+      "sponsor_name": "University of North Carolina, Chapel Hill",
+      "phase_std": "PHASE2",
+      "n": 99
+    },
+    {
+      "sponsor_name": "University of North Carolina, Chapel Hill",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 5
+    },
+    {
+      "sponsor_name": "University of North Carolina, Chapel Hill",
+      "phase_std": "PHASE3",
+      "n": 15
+    },
+    {
+      "sponsor_name": "University of North Carolina, Chapel Hill",
+      "phase_std": "PHASE4",
+      "n": 67
+    },
+    {
+      "sponsor_name": "University of North Carolina, Chapel Hill",
+      "phase_std": "Unknown",
+      "n": 244
+    },
+    {
+      "sponsor_name": "University of Pennsylvania",
+      "phase_std": "EARLY_PHASE1",
+      "n": 41
+    },
+    {
+      "sponsor_name": "University of Pennsylvania",
+      "phase_std": "NA",
+      "n": 800
+    },
+    {
+      "sponsor_name": "University of Pennsylvania",
+      "phase_std": "PHASE1",
+      "n": 119
+    },
+    {
+      "sponsor_name": "University of Pennsylvania",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 31
+    },
+    {
+      "sponsor_name": "University of Pennsylvania",
+      "phase_std": "PHASE2",
+      "n": 155
+    },
+    {
+      "sponsor_name": "University of Pennsylvania",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 19
+    },
+    {
+      "sponsor_name": "University of Pennsylvania",
+      "phase_std": "PHASE3",
+      "n": 56
+    },
+    {
+      "sponsor_name": "University of Pennsylvania",
+      "phase_std": "PHASE4",
+      "n": 90
+    },
+    {
+      "sponsor_name": "University of Pennsylvania",
+      "phase_std": "Unknown",
+      "n": 288
+    },
+    {
+      "sponsor_name": "University of Pittsburgh",
+      "phase_std": "EARLY_PHASE1",
+      "n": 16
+    },
+    {
+      "sponsor_name": "University of Pittsburgh",
+      "phase_std": "NA",
+      "n": 739
+    },
+    {
+      "sponsor_name": "University of Pittsburgh",
+      "phase_std": "PHASE1",
+      "n": 62
+    },
+    {
+      "sponsor_name": "University of Pittsburgh",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 17
+    },
+    {
+      "sponsor_name": "University of Pittsburgh",
+      "phase_std": "PHASE2",
+      "n": 73
+    },
+    {
+      "sponsor_name": "University of Pittsburgh",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 14
+    },
+    {
+      "sponsor_name": "University of Pittsburgh",
+      "phase_std": "PHASE3",
+      "n": 37
+    },
+    {
+      "sponsor_name": "University of Pittsburgh",
+      "phase_std": "PHASE4",
+      "n": 67
+    },
+    {
+      "sponsor_name": "University of Pittsburgh",
+      "phase_std": "Unknown",
+      "n": 346
+    },
+    {
+      "sponsor_name": "University of Washington",
+      "phase_std": "EARLY_PHASE1",
+      "n": 10
+    },
+    {
+      "sponsor_name": "University of Washington",
+      "phase_std": "NA",
+      "n": 697
+    },
+    {
+      "sponsor_name": "University of Washington",
+      "phase_std": "PHASE1",
+      "n": 67
+    },
+    {
+      "sponsor_name": "University of Washington",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 60
+    },
+    {
+      "sponsor_name": "University of Washington",
+      "phase_std": "PHASE2",
+      "n": 191
+    },
+    {
+      "sponsor_name": "University of Washington",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 23
+    },
+    {
+      "sponsor_name": "University of Washington",
+      "phase_std": "PHASE3",
+      "n": 58
+    },
+    {
+      "sponsor_name": "University of Washington",
+      "phase_std": "PHASE4",
+      "n": 92
+    },
+    {
+      "sponsor_name": "University of Washington",
+      "phase_std": "Unknown",
+      "n": 170
+    },
+    {
+      "sponsor_name": "VA Office of Research and Development",
+      "phase_std": "EARLY_PHASE1",
+      "n": 21
+    },
+    {
+      "sponsor_name": "VA Office of Research and Development",
+      "phase_std": "NA",
+      "n": 1151
+    },
+    {
+      "sponsor_name": "VA Office of Research and Development",
+      "phase_std": "PHASE1",
+      "n": 39
+    },
+    {
+      "sponsor_name": "VA Office of Research and Development",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 37
+    },
+    {
+      "sponsor_name": "VA Office of Research and Development",
+      "phase_std": "PHASE2",
+      "n": 119
+    },
+    {
+      "sponsor_name": "VA Office of Research and Development",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 29
+    },
+    {
+      "sponsor_name": "VA Office of Research and Development",
+      "phase_std": "PHASE3",
+      "n": 53
+    },
+    {
+      "sponsor_name": "VA Office of Research and Development",
+      "phase_std": "PHASE4",
+      "n": 72
+    },
+    {
+      "sponsor_name": "VA Office of Research and Development",
+      "phase_std": "Unknown",
+      "n": 157
+    },
+    {
+      "sponsor_name": "Wake Forest University Health Sciences",
+      "phase_std": "EARLY_PHASE1",
+      "n": 36
+    },
+    {
+      "sponsor_name": "Wake Forest University Health Sciences",
+      "phase_std": "NA",
+      "n": 629
+    },
+    {
+      "sponsor_name": "Wake Forest University Health Sciences",
+      "phase_std": "PHASE1",
+      "n": 58
+    },
+    {
+      "sponsor_name": "Wake Forest University Health Sciences",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 15
+    },
+    {
+      "sponsor_name": "Wake Forest University Health Sciences",
+      "phase_std": "PHASE2",
+      "n": 167
+    },
+    {
+      "sponsor_name": "Wake Forest University Health Sciences",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 8
+    },
+    {
+      "sponsor_name": "Wake Forest University Health Sciences",
+      "phase_std": "PHASE3",
+      "n": 30
+    },
+    {
+      "sponsor_name": "Wake Forest University Health Sciences",
+      "phase_std": "PHASE4",
+      "n": 87
+    },
+    {
+      "sponsor_name": "Wake Forest University Health Sciences",
+      "phase_std": "Unknown",
+      "n": 257
+    },
+    {
+      "sponsor_name": "Washington University School of Medicine",
+      "phase_std": "EARLY_PHASE1",
+      "n": 65
+    },
+    {
+      "sponsor_name": "Washington University School of Medicine",
+      "phase_std": "NA",
+      "n": 700
+    },
+    {
+      "sponsor_name": "Washington University School of Medicine",
+      "phase_std": "PHASE1",
+      "n": 214
+    },
+    {
+      "sponsor_name": "Washington University School of Medicine",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 74
+    },
+    {
+      "sponsor_name": "Washington University School of Medicine",
+      "phase_std": "PHASE2",
+      "n": 245
+    },
+    {
+      "sponsor_name": "Washington University School of Medicine",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 21
+    },
+    {
+      "sponsor_name": "Washington University School of Medicine",
+      "phase_std": "PHASE3",
+      "n": 42
+    },
+    {
+      "sponsor_name": "Washington University School of Medicine",
+      "phase_std": "PHASE4",
+      "n": 66
+    },
+    {
+      "sponsor_name": "Washington University School of Medicine",
+      "phase_std": "Unknown",
+      "n": 281
+    },
+    {
+      "sponsor_name": "Yale University",
+      "phase_std": "EARLY_PHASE1",
+      "n": 101
+    },
+    {
+      "sponsor_name": "Yale University",
+      "phase_std": "NA",
+      "n": 728
+    },
+    {
+      "sponsor_name": "Yale University",
+      "phase_std": "PHASE1",
+      "n": 193
+    },
+    {
+      "sponsor_name": "Yale University",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 44
+    },
+    {
+      "sponsor_name": "Yale University",
+      "phase_std": "PHASE2",
+      "n": 262
+    },
+    {
+      "sponsor_name": "Yale University",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 28
+    },
+    {
+      "sponsor_name": "Yale University",
+      "phase_std": "PHASE3",
+      "n": 53
+    },
+    {
+      "sponsor_name": "Yale University",
+      "phase_std": "PHASE4",
+      "n": 56
+    },
+    {
+      "sponsor_name": "Yale University",
+      "phase_std": "Unknown",
+      "n": 212
+    },
+    {
+      "sponsor_name": "Yonsei University",
+      "phase_std": "NA",
+      "n": 605
+    },
+    {
+      "sponsor_name": "Yonsei University",
+      "phase_std": "PHASE1",
+      "n": 8
+    },
+    {
+      "sponsor_name": "Yonsei University",
+      "phase_std": "PHASE1/PHASE2",
+      "n": 24
+    },
+    {
+      "sponsor_name": "Yonsei University",
+      "phase_std": "PHASE2",
+      "n": 120
+    },
+    {
+      "sponsor_name": "Yonsei University",
+      "phase_std": "PHASE2/PHASE3",
+      "n": 4
+    },
+    {
+      "sponsor_name": "Yonsei University",
+      "phase_std": "PHASE3",
+      "n": 35
+    },
+    {
+      "sponsor_name": "Yonsei University",
+      "phase_std": "PHASE4",
+      "n": 184
+    },
+    {
+      "sponsor_name": "Yonsei University",
+      "phase_std": "Unknown",
+      "n": 358
+    }
+  ]
+}

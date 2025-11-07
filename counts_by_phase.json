@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "as_of_utc": "2025-11-07 02:38:57.349867+00:00"
+  },
+  "data": [
+    {
+      "phase_std": "EARLY_PHASE1",
+      "n": 5900
+    },
+    {
+      "phase_std": "NA",
+      "n": 213006
+    },
+    {
+      "phase_std": "PHASE1",
+      "n": 46177
+    },
+    {
+      "phase_std": "PHASE1/PHASE2",
+      "n": 16049
+    },
+    {
+      "phase_std": "PHASE2",
+      "n": 62134
+    },
+    {
+      "phase_std": "PHASE2/PHASE3",
+      "n": 7257
+    },
+    {
+      "phase_std": "PHASE3",
+      "n": 40560
+    },
+    {
+      "phase_std": "PHASE4",
+      "n": 34275
+    },
+    {
+      "phase_std": "Unknown",
+      "n": 131703
+    }
+  ]
+}
