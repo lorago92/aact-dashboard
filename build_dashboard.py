@@ -1,27 +1,38 @@
-\
-import os, json, pathlib, pandas as pd
+import os
+import json
+import pathlib
+import pandas as pd
 from sqlalchemy import create_engine, text
+from sqlalchemy.engine import URL
 
-# Environment variables set in your CI (GitHub Actions secrets)
+# Secrets are injected by GitHub Actions:
+# Settings → Secrets and variables → Actions → AACT_USER, AACT_PASS
 AACT_USER = os.environ["AACT_USER"]
 AACT_PASS = os.environ["AACT_PASS"]
 
-engine = create_engine(
-    f"postgresql+psycopg2://{AACT_USER}:{AACT_PASS}"
-    "@aact-db.ctti-clinicaltrials.org:5432/aact",
-    connect_args={"sslmode": "require"},
-    pool_pre_ping=True,
+# ✅ Build the connection URL safely (handles @, :, /, #, etc. in passwords)
+url = URL.create(
+    drivername="postgresql+psycopg2",
+    username=AACT_USER,
+    password=AACT_PASS,
+    host="aact-db.ctti-clinicaltrials.org",
+    port=5432,
+    database="aact",
+    query={"sslmode": "require"},  # TLS required
 )
+
+engine = create_engine(url, pool_pre_ping=True)
 
 def q(sql, params=None):
     return pd.read_sql(text(sql), engine, params=params or {})
 
 def write_json(name, df, meta):
-    outdir = pathlib.Path("public"); outdir.mkdir(exist_ok=True, parents=True)
+    outdir = pathlib.Path("public")
+    outdir.mkdir(exist_ok=True, parents=True)
     payload = {"meta": meta, "data": json.loads(df.to_json(orient="records"))}
     (outdir / name).write_text(json.dumps(payload, indent=2))
 
-# 0) meta: as-of timestamp from DB (UTC)
+# 0) Meta timestamp (UTC)
 as_of = q("select now() as ts").iloc[0]["ts"]
 meta = {"as_of_utc": str(as_of)}
 
@@ -58,7 +69,7 @@ order by case phase_std
 df_phase = q(counts_by_phase_sql)
 write_json("counts_by_phase.json", df_phase, meta)
 
-# 2) Phase × Status heatmap data
+# 2) Phase × Status heatmap
 phase_status_sql = """
 with base as (
   select
@@ -109,7 +120,7 @@ order by s.primary_completion_date;
 df_upcoming = q(upcoming_sql)
 write_json("upcoming_12m.json", df_upcoming, meta)
 
-# 4) Sponsor pipeline (lead-only, top 50 by study count)
+# 4) Sponsor pipeline (lead-only, top 50 by count)
 sponsor_sql = """
 with base as (
   select sp.name as sponsor_name,
@@ -137,12 +148,13 @@ order by sponsor_name, phase_std;
 df_sponsor = q(sponsor_sql)
 write_json("sponsor_pipeline_top50.json", df_sponsor, meta)
 
-# 5) Optional: publish a ready-to-embed HTML bar (counts by phase)
+# 5) Optional: ready-to-embed Plotly chart
 try:
     import plotly.express as px
+    html = (pathlib.Path("public") / "counts_by_phase.html")
     fig = px.bar(df_phase, x="phase_std", y="n", title="ClinicalTrials.gov — Trials by Phase")
     fig.update_layout(xaxis_title="Phase", yaxis_title="Number of Trials")
-    (pathlib.Path("public") / "counts_by_phase.html").write_text(fig.to_html(include_plotlyjs="cdn", full_html=True))
+    html.write_text(fig.to_html(include_plotlyjs="cdn", full_html=True))
 except Exception as e:
     print("Plotly HTML skipped:", e)
 
