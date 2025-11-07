@@ -39,6 +39,12 @@ jobs:
         with:
           path: public
 
+      - name: Build upcoming timeline
+        env:
+          AACT_USER: ${{ secrets.AACT_USER }}
+          AACT_PASS: ${{ secrets.AACT_PASS }}
+          TIMELINE_HORIZON_MONTHS: "12"
+        run: python build_timeline_upcoming.py
 
   deploy:
     needs: build
