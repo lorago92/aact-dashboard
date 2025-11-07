@@ -1,0 +1,37 @@
+name: aact-daily-refresh
+
+on:
+  schedule:
+    - cron: "15 10 * * *"   # runs daily at 10:15 UTC
+  workflow_dispatch: {}      # allow manual runs from the Actions tab
+
+permissions:
+  contents: write            # needed to push to gh-pages
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build data feeds
+        env:
+          AACT_USER: ${{ secrets.AACT_USER }}
+          AACT_PASS: ${{ secrets.AACT_PASS }}
+        run: python build_dashboard.py
+
+      - name: Publish to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
