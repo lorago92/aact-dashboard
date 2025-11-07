@@ -34,17 +34,20 @@ jobs:
           AACT_PASS: ${{ secrets.AACT_PASS }}
         run: python build_phase_status_all.py
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: public
-
       - name: Build upcoming timeline
         env:
           AACT_USER: ${{ secrets.AACT_USER }}
           AACT_PASS: ${{ secrets.AACT_PASS }}
           TIMELINE_HORIZON_MONTHS: "12"
         run: python build_timeline_upcoming.py
+
+      - name: List site files (sanity check)
+        run: ls -l public
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
 
   deploy:
     needs: build
