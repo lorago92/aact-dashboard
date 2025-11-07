@@ -18,25 +18,32 @@
 </table>
 <script>
 (async () => {
-  const res = await fetch("upcoming_12m.json?ts="+Date.now());
-  if (!res.ok){ document.getElementById('meta').textContent="Failed to load"; return; }
-  const { meta, data } = await res.json();
-  const fmt = d => d ? new Date(d).toISOString().slice(0,10) : "";
-  document.getElementById('meta').textContent =
-    "Upcoming Primary Completions (12m) — As of " + meta.as_of_utc + " · " + data.length + " studies";
-  const tbody = document.querySelector("#tbl tbody");
-  data.forEach(r=>{
-    const tr=document.createElement('tr');
-    tr.innerHTML =
-      `<td><a href="https://clinicaltrials.gov/study/${r.nct_id}" target="_blank" rel="noopener">${r.nct_id}</a></td>
-       <td>${(r.title||"").replace(/</g,"&lt;")}</td>
-       <td>${r.phase_std||""}</td>
-       <td>${r.overall_status||""}</td>
-       <td>${fmt(r.primary_completion_date)} ${r.primary_completion_date_type ? '('+r.primary_completion_date_type+')' : ''}</td>
-       <td>${r.lead_sponsor||""}</td>
-       <td>${r.enrollment ?? ""}</td>`;
-    tbody.appendChild(tr);
-  });
+  const url = "https://lorago92.github.io/aact-dashboard/upcoming_12m.json?ts=" + Date.now(); // ABSOLUTE URL
+  try {
+    const res = await fetch(url);
+    if (!res.ok){ document.getElementById('meta').textContent="Failed to load: " + res.status; return; }
+    const { meta, data } = await res.json();
+    if (!Array.isArray(data) || data.length === 0){ document.getElementById('meta').textContent="No upcoming studies in the next 12 months."; return; }
+
+    const fmt = d => d ? new Date(d).toISOString().slice(0,10) : "";
+    document.getElementById('meta').textContent =
+      "Upcoming Primary Completions (12m) — As of " + meta.as_of_utc + " · " + data.length + " studies";
+    const tbody = document.querySelector("#tbl tbody");
+    data.forEach(r=>{
+      const tr=document.createElement('tr');
+      tr.innerHTML =
+        `<td><a href="https://clinicaltrials.gov/study/${r.nct_id}" target="_blank" rel="noopener">${r.nct_id}</a></td>
+         <td>${(r.title||"").replace(/</g,"&lt;")}</td>
+         <td>${r.phase_std||""}</td>
+         <td>${r.overall_status||""}</td>
+         <td>${fmt(r.primary_completion_date)} ${r.primary_completion_date_type ? '('+r.primary_completion_date_type+')' : ''}</td>
+         <td>${r.lead_sponsor||""}</td>
+         <td>${r.enrollment ?? ""}</td>`;
+      tbody.appendChild(tr);
+    });
+  } catch(e){
+    document.getElementById('meta').textContent = "Error: " + e;
+  }
 })();
 </script>
 </html>

@@ -1,37 +1,43 @@
 <!doctype html>
 <html lang="en"><meta charset="utf-8" />
 <title>Phase × Status Heatmap</title>
-<div id="vis"></div>
+<div id="vis" style="min-height:420px; font:14px system-ui, sans-serif">Loading…</div>
 <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 <script>
 (async () => {
-  const url = "phase_status.json?ts=" + Date.now();
-  const res = await fetch(url);
-  if (!res.ok) { document.body.textContent = "Failed to load data"; return; }
-  const { meta, data } = await res.json();
-  const spec = {
-    $schema: "https://vega.github.io/schema/vega-lite/v5.json",
-    width: "container",
-    height: 420,
-    data: { values: data },
-    transform: [{ calculate: "datum.n", as: "count" }],
-    params: [{ name:"phaseOrder", value:["Early Phase 1","Phase 1","Phase 1/2","Phase 2","Phase 2/3","Phase 3","Phase 4","Not Applicable","Unknown"] }],
-    mark: "rect",
-    encoding: {
-      x: { field: "status", type: "ordinal", title: "Overall Status" },
-      y: { field: "phase_std", type: "ordinal", sort:{param:"phaseOrder"}, title: "Phase" },
-      color: { field: "count", type: "quantitative", title: "Studies" },
-      tooltip: [
-        { field: "phase_std", title: "Phase" },
-        { field: "status", title: "Status" },
-        { field: "n", title: "Studies" }
-      ]
-    },
-    title: { text: "Phase × Status", subtitle: "As of " + meta.as_of_utc }
-  };
-  vegaEmbed("#vis", spec, {actions:false});
+  const url = "https://lorago92.github.io/aact-dashboard/phase_status.json?ts=" + Date.now(); // ABSOLUTE URL
+  try {
+    const res = await fetch(url);
+    if (!res.ok) { document.getElementById('vis').textContent = "Failed to load: " + res.status; return; }
+    const { meta, data } = await res.json();
+    if (!Array.isArray(data) || data.length === 0) { document.getElementById('vis').textContent = "No data available."; return; }
+
+    const spec = {
+      $schema: "https://vega.github.io/schema/vega-lite/v5.json",
+      width: "container",
+      height: 420,
+      data: { values: data },
+      transform: [{ calculate: "datum.n", as: "count" }],
+      params: [{ name:"phaseOrder", value:["Early Phase 1","Phase 1","Phase 1/2","Phase 2","Phase 2/3","Phase 3","Phase 4","Not Applicable","Unknown"] }],
+      mark: "rect",
+      encoding: {
+        x: { field: "status", type: "ordinal", title: "Overall Status" },
+        y: { field: "phase_std", type: "ordinal", sort:{param:"phaseOrder"}, title: "Phase" },
+        color: { field: "count", type: "quantitative", title: "Studies" },
+        tooltip: [
+          { field: "phase_std", title: "Phase" },
+          { field: "status", title: "Status" },
+          { field: "n", title: "Studies" }
+        ]
+      },
+      title: { text: "Phase × Status", subtitle: "As of " + meta.as_of_utc }
+    };
+    vegaEmbed("#vis", spec, {actions:false});
+  } catch (e) {
+    document.getElementById('vis').textContent = "Error: " + e;
+  }
 })();
 </script>
 </html>
