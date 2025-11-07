@@ -28,7 +28,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install sqlalchemy psycopg2-binary pandas plotly
 
-      - name: Build heatmap
+      - name: Build heatmap (all trials)
         env:
           AACT_USER: ${{ secrets.AACT_USER }}
           AACT_PASS: ${{ secrets.AACT_PASS }}
@@ -41,7 +41,14 @@ jobs:
           TIMELINE_HORIZON_MONTHS: "12"
         run: python build_timeline_upcoming.py
 
-      - name: List site files (sanity check)
+      - name: Build upcoming bars (starts / primary / completion)
+        env:
+          AACT_USER: ${{ secrets.AACT_USER }}
+          AACT_PASS: ${{ secrets.AACT_PASS }}
+          UPCOMING_HORIZON_MONTHS: "12"
+        run: python build_upcoming_bars.py
+
+      - name: List site files
         run: ls -l public
 
       - name: Upload artifact
