@@ -138,40 +138,52 @@ html_path = out_dir / "upcoming_trials_next3m.html"
 
 df.to_csv(csv_path, index=False)
 
+# ---- Write CSV + single clean DataTables HTML (no title, white bg) ----
+out_dir = Path("public"); out_dir.mkdir(exist_ok=True)
+csv_path  = out_dir / "upcoming_trials_next3m_sorted.csv"
+html_path = out_dir / "upcoming_trials_next3m.html"
+
+df.to_csv(csv_path, index=False)
+
 t = df.copy()
 if "enrollment" in t:
     t["enrollment"] = t["enrollment"].map(lambda x: f"{int(x):,}" if pd.notna(x) else "")
+
+# Build ONE table with the proper id/classes (no wrapper table)
+table_html = t.to_html(
+    index=False,
+    escape=True,
+    table_id="t",
+    classes="display compact"
+)
 
 html = f"""<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Upcoming Trials (Next 3 Months)</title>
 <link rel="stylesheet" href="https://cdn.datatables.net/2.1.7/css/dataTables.dataTables.min.css"/>
 <style>
-  body {{ font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 16px; }}
-  table.dataTable {{ width: 100% !important; }}
+  html, body {{ background:#fff; margin:16px; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }}
+  table.dataTable {{ width: 100% !important; background:#fff; }}
 </style>
 </head>
 <body>
-<h3 style="margin:0 0 12px 0;">Upcoming Trials (Next 3 Months)</h3>
-<table id="t" class="display compact" style="width:100%">
-  {t.to_html(index=False, escape=True)}
-</table>
-
+{table_html}
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/2.1.7/js/dataTables.min.js"></script>
 <script>
-  const dt = new DataTable('#t', {{
+  new DataTable('#t', {{
     pageLength: 25,
     order: [[0, 'asc'], [1, 'asc']], // event_date then event_type
     scrollX: true,
+    language: {{ emptyTable: "" }}   // suppress empty message flicker
   }});
 </script>
 </body>
 </html>
 """
+
 html_path.write_text(html, encoding="utf-8")
 print("Wrote:", csv_path)
 print("Wrote:", html_path)
