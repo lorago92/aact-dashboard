@@ -4,8 +4,8 @@ import pandas as pd
 
 # === Params you can edit directly ===
 FONT_PX           = 11
-TOP_SPONSORS      = 0
-TOP_INTERVENTIONS = 0
+TOP_SPONSORS      = 12
+TOP_INTERVENTIONS = 20
 
 # Inputs/outputs (linked to the previous script’s artifacts)
 in_csv   = Path("public") / "upcoming_trials_next3m_sorted.csv"
