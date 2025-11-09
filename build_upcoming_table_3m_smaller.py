@@ -135,8 +135,8 @@ df = df.sort_values(["event_date", "event_type", "nct_id"]).reset_index(drop=Tru
 
 # Write site files
 out_dir = Path("public"); out_dir.mkdir(exist_ok=True)
-csv_path  = out_dir / "upcoming_trials_next3m_sorted.csv"
-html_path = out_dir / "upcoming_trials_next3m.html"
+csv_path  = out_dir / "upcoming_trials_next3m_sorted_smaller.csv"
+html_path = out_dir / "upcoming_trials_next3m_smaller.html"
 
 df.to_csv(csv_path, index=False)
 
