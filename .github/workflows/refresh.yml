@@ -64,6 +64,13 @@ jobs:
           AACT_PASS: ${{ secrets.AACT_PASS }}
           UPCOMING_TABLE_HORIZON_MONTHS: "3"
         run: python build_upcoming_table_3m_smaller.py
+        
+      - name: Build upcoming table graph (next 3m)
+        env:
+          AACT_USER: ${{ secrets.AACT_USER }}
+          AACT_PASS: ${{ secrets.AACT_PASS }}
+          UPCOMING_TABLE_HORIZON_MONTHS: "3"
+        run: python build_upcoming_table_3m_graph.py
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
