@@ -6,7 +6,7 @@ from sqlalchemy.engine import URL
 
 # === Params you can edit directly ===
 HORIZON_MONTHS = 3
-FONT_PX = 11  # ← change this to control table + controls font size (px)
+FONT_PX = 11  # ← change this to control table + header + controls font size (px)
 STATUS_ACTIVE = (
     'RECRUITING',
     'ACTIVE_NOT_RECRUITING',
@@ -135,8 +135,8 @@ df = df.sort_values(["event_date", "event_type", "nct_id"]).reset_index(drop=Tru
 
 # Write site files
 out_dir = Path("public"); out_dir.mkdir(exist_ok=True)
-csv_path  = out_dir / "upcoming_trials_next3m_sorted_smaller.csv"
-html_path = out_dir / "upcoming_trials_next3m_smaller.html"
+csv_path  = out_dir / "upcoming_trials_next3m_sorted.csv"
+html_path = out_dir / "upcoming_trials_next3m.html"
 
 df.to_csv(csv_path, index=False)
 
@@ -145,7 +145,6 @@ t = df.copy()
 if "enrollment" in t.columns:
     t["enrollment"] = t["enrollment"].map(lambda x: f"{int(x):,}" if pd.notna(x) else "")
 
-# Build ONE table with the proper id/classes (no wrapper table)
 table_html = t.to_html(
     index=False,
     escape=True,
@@ -165,19 +164,36 @@ html = f"""<!doctype html>
   html, body {{ background:#fff; margin:16px; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }}
   table.dataTable {{ width: 100% !important; background:#fff; }}
 
-  /* Smaller font + tighter padding for the DataTable */
+  /* Base: body table */
   #t, #t th, #t td {{ font-size: {FONT_PX}px; line-height: 1.25; }}
   #t thead th, #t tbody td {{ padding: 4px 6px; }}
 
-  /* Shrink DataTables UI (search, length, info, paging) to match */
+  /* IMPORTANT: cloned header/body created by DataTables when scrollX is on */
+  #t_wrapper .dt-scroll-head table,
+  #t_wrapper .dt-scroll-head th,
+  #t_wrapper .dt-scroll-head td,
+  #t_wrapper .dt-scroll-body table,
+  #t_wrapper .dt-scroll-body th,
+  #t_wrapper .dt-scroll-body td {{
+    font-size: {FONT_PX}px;
+    line-height: 1.25;
+  }}
+  #t_wrapper .dt-scroll-head th,
+  #t_wrapper .dt-scroll-body td {{ padding: 4px 6px; }}
+
+  /* Controls (search, page length, info, pager) */
   #t_wrapper .dt-search input,
   #t_wrapper .dt-length select,
   #t_wrapper .dt-info,
-  #t_wrapper .dt-paging button {{ font-size: {FONT_PX}px; }} 
+  #t_wrapper .dt-paging button {{ font-size: {FONT_PX}px; }}
 
   /* Slightly smaller on narrow screens */
   @media (max-width: 768px) {{
     #t, #t th, #t td {{ font-size: {mobile_font_px}px; }}
+    #t_wrapper .dt-scroll-head table,
+    #t_wrapper .dt-scroll-head th,
+    #t_wrapper .dt-scroll-body table,
+    #t_wrapper .dt-scroll-body td {{ font-size: {mobile_font_px}px; }}
   }}
 </style>
 </head>
@@ -186,12 +202,17 @@ html = f"""<!doctype html>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/2.1.7/js/dataTables.min.js"></script>
 <script>
-  new DataTable('#t', {{
+  const dt = new DataTable('#t', {{
     pageLength: 25,
     order: [[0, 'asc'], [1, 'asc']], // event_date then event_type
     scrollX: true,
-    language: {{ emptyTable: "" }}   // suppress empty message flicker
+    language: {{ emptyTable: "" }},
+    autoWidth: false
   }});
+
+  // Ensure widths recalculated after fonts/styles apply
+  window.addEventListener('load', () => dt.columns.adjust());
+  setTimeout(() => dt.columns.adjust(), 0);
 </script>
 </body>
 </html>
