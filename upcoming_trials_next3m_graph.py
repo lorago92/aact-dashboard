@@ -36,7 +36,7 @@ html = f"""<!doctype html>
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Upcoming Trials — Charts</title>
+<title>Upcoming Trials (next 3 months) — Charts</title>
 <style>
   html, body {{
     background:#fff; margin:16px; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
