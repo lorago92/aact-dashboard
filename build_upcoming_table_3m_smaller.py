@@ -173,7 +173,7 @@ html = f"""<!doctype html>
   #t_wrapper .dt-search input,
   #t_wrapper .dt-length select,
   #t_wrapper .dt-info,
-  #t_wrapper .dt-paging button {{ font-size: {FONT_PX}px; }}
+  #t_wrapper .dt-paging button {{ font-size: {FONT_PX}px; }} 
 
   /* Slightly smaller on narrow screens */
   @media (max-width: 768px) {{
