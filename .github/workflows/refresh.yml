@@ -71,7 +71,14 @@ jobs:
           AACT_PASS: ${{ secrets.AACT_PASS }}
           UPCOMING_TABLE_HORIZON_MONTHS: "3"
         run: python upcoming_trials_next3m_graph.py
-      
+
+      - name: Build trials.json (next 12m, one row per trial)
+        env:
+          AACT_USER: ${{ secrets.AACT_USER }}
+          AACT_PASS: ${{ secrets.AACT_PASS }}
+          TRIALS_JSON_HORIZON_MONTHS: "12"
+        run: python build_trials_json.py
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
