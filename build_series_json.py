@@ -1,21 +1,16 @@
 """
-Build series.json — a bundle of FRED macro series + S&P 500 for the
-agostinilorenzo.com /macrotrends dashboard. Output schema:
+Build series.json — macro indicators powering the agostinilorenzo.com
+/macrotrends dashboard. Six thematic charts:
 
-  {
-    "generated_at": "2026-04-24T10:17:00Z",
-    "recessions":   [{"start": "YYYY-MM-DD", "end": "YYYY-MM-DD"}, ...],
-    "series": {
-      "<SERIES_ID>": {
-        "name":   "...",
-        "unit":   "...",
-        "source": "FRED" | "Yahoo Finance",
-        "freq":   "M" | "Q" | "D",
-        "points": [{"d": "YYYY-MM-DD", "v": <float>}, ...]
-      },
-      ...
-    }
-  }
+  1. Growth & activity      — real GDP, industrial production, retail sales
+  2. Labor market           — unemployment, NFP, initial claims, job openings
+  3. Inflation & expectations — CPI, core CPI, core PCE, 10Y breakeven, Michigan 1Y
+  4. Rates & yield curve    — Fed Funds, 2Y, 10Y, 10Y-2Y spread, 30Y mortgage
+  5. Financial conditions   — NFCI, HY spread, VIX, S&P 500
+  6. Consumer & housing     — sentiment, saving rate, Case-Shiller YoY, mortgage, starts
+
+Daily FRED series are downsampled to weekly (Friday close) to keep
+the GH Pages payload small (<400 KB uncompressed ⇒ ~80 KB gzipped).
 """
 
 import json
@@ -35,26 +30,36 @@ if not FRED_API_KEY:
 fred = Fred(api_key=FRED_API_KEY)
 
 SERIES_SPEC = {
-    # id              name                                         unit                                  freq
-    "GDP":           ("Real GDP",                                  "Billions USD SAAR",                  "Q"),
-    "GFDEBTN":       ("Federal Public Debt",                       "Millions USD NSA",                   "Q"),
-    "GFDEGDQ188S":   ("Federal Debt as % of GDP",                  "%",                                  "Q"),
-    "CPIAUCSL":      ("CPI (All Urban Consumers)",                 "Index 1982–84=100 SA",               "M"),
-    "CPILFESL":      ("Core CPI (ex Food & Energy)",               "Index 1982–84=100 SA",               "M"),
-    "PPIACO":        ("PPI (All Commodities)",                     "Index 1982=100 NSA",                 "M"),
-    "PCEPI":         ("PCE Price Index",                           "Index 2017=100 SA",                  "M"),
-    "FEDFUNDS":      ("Effective Fed Funds Rate",                  "%",                                  "M"),
-    "UNRATE":        ("Unemployment Rate",                         "%",                                  "M"),
-    "PCE":           ("Personal Consumption Expenditures",         "Billions USD SAAR",                  "M"),
-    "PAYEMS":        ("Non-Farm Payrolls",                         "Thousands SA",                       "M"),
-    "BOPGSTB":       ("Goods & Services Trade Balance",            "Millions USD NSA",                   "M"),
-    "EXPGS":         ("Exports of Goods and Services",             "Billions USD SAAR",                  "Q"),
-    "IMPGS":         ("Imports of Goods and Services",             "Billions USD SAAR",                  "Q"),
-    "RSAFS":         ("Retail Sales (Advance)",                    "Millions USD SA",                    "M"),
-    "CSUSHPINSA":    ("Case-Shiller Home Price Index (20-city)",   "Index Jan 2000=100 NSA",             "M"),
-    "PERMIT":        ("New Private Housing Units Authorized",      "Thousands SAAR",                     "M"),
-    "ECIALLCIV":     ("Employment Cost Index (All Civilians)",     "Index Dec 2005=100 SA",              "Q"),
-    "SAHMREALTIME":  ("Sahm Rule Recession Indicator",             "percentage points",                  "M"),
+    # Growth & activity
+    "GDPC1":         ("Real GDP",                                 "Billions 2017 USD SAAR",     "Q"),
+    "INDPRO":        ("Industrial Production",                    "Index 2017=100 SA",          "M"),
+    "RSAFS":         ("Retail Sales (Advance)",                   "Millions USD SA",            "M"),
+    # Labor market
+    "UNRATE":        ("Unemployment Rate",                        "%",                          "M"),
+    "PAYEMS":        ("Non-Farm Payrolls",                        "Thousands SA",               "M"),
+    "ICSA":          ("Initial Jobless Claims",                   "Number SA",                  "W"),
+    "JTSJOL":        ("Job Openings (JOLTS)",                     "Thousands SA",               "M"),
+    # Inflation & expectations
+    "CPIAUCSL":      ("CPI (All Urban Consumers)",                "Index 1982-84=100 SA",       "M"),
+    "CPILFESL":      ("Core CPI (ex Food & Energy)",              "Index 1982-84=100 SA",       "M"),
+    "PCEPILFE":      ("Core PCE Price Index",                     "Index 2017=100 SA",          "M"),
+    "T10YIE":        ("10-Year Breakeven Inflation",              "%",                          "D"),
+    "MICH":          ("Michigan 1-Year Inflation Expectations",   "%",                          "M"),
+    # Rates & yield curve
+    "DFF":           ("Effective Fed Funds Rate",                 "%",                          "D"),
+    "DGS2":          ("2-Year Treasury Yield",                    "%",                          "D"),
+    "DGS10":         ("10-Year Treasury Yield",                   "%",                          "D"),
+    "T10Y2Y":        ("10Y-2Y Treasury Spread",                   "%",                          "D"),
+    "MORTGAGE30US":  ("30-Year Fixed Mortgage Rate",              "%",                          "W"),
+    # Financial conditions
+    "NFCI":          ("Chicago Fed Financial Conditions Index",   "standardized",               "W"),
+    "BAMLH0A0HYM2":  ("ICE BofA High-Yield OAS",                  "%",                          "D"),
+    "VIXCLS":        ("CBOE Volatility Index (VIX)",              "Index",                      "D"),
+    # Consumer & housing
+    "UMCSENT":       ("Michigan Consumer Sentiment",              "Index 1966:Q1=100",          "M"),
+    "PSAVERT":       ("Personal Saving Rate",                     "%",                          "M"),
+    "CSUSHPINSA":    ("Case-Shiller Home Price Index (20-city)",  "Index Jan 2000=100 NSA",     "M"),
+    "HOUST":         ("Housing Starts",                           "Thousands SAAR",             "M"),
 }
 
 
@@ -77,15 +82,20 @@ def _points(series: pd.Series) -> list:
 out_series: dict = {}
 for fred_id, (name, unit, freq) in SERIES_SPEC.items():
     s = fred.get_series(fred_id)
+    if freq == "D":
+        s = s.resample("W-FRI").last().dropna()
+        effective_freq = "W"
+    else:
+        effective_freq = freq
     out_series[fred_id] = {
         "name": name,
         "unit": unit,
         "source": "FRED",
-        "freq": freq,
+        "freq": effective_freq,
         "points": _points(s),
     }
 
-# S&P 500 via yfinance — month-end close, keeps payload tight
+# S&P 500 via yfinance — month-end close
 sp = yf.download("^GSPC", period="max", auto_adjust=True, progress=False)
 if sp.empty:
     raise SystemExit("Yahoo Finance returned no S&P 500 data.")
