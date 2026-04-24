@@ -80,7 +80,7 @@ def bar_chart_for(date_field: str):
     df["status"]    = pd.Categorical(df["status"],    categories=STATUS_ACTIVE, ordered=True)
 
     piv = df.pivot_table(index="phase_std", columns="status", values="n", fill_value=0, aggfunc="sum")
-    piv = piv.reindex(index=PHASE_ORDER, fill_value=0)[STATUS_ACTIVE]
+    piv = piv.reindex(index=PHASE_ORDER, columns=STATUS_ACTIVE, fill_value=0)
     plot_df = piv.reset_index().melt(id_vars="phase_std", var_name="status", value_name="count")
 
     fig = px.bar(
