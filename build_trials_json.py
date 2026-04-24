@@ -1,4 +1,5 @@
 import json
+import math
 import os
 from datetime import datetime, timezone
 from pathlib import Path
@@ -82,7 +83,19 @@ for col in ("start_date", "primary_completion_date", "completion_date"):
 
 df["enrollment"] = df["enrollment"].map(lambda x: int(x) if pd.notna(x) else None)
 
-rows = df.where(pd.notna(df), None).to_dict(orient="records")
+
+def _sanitize(v):
+    if v is None:
+        return None
+    if isinstance(v, float) and math.isnan(v):
+        return None
+    return v
+
+
+rows = [
+    {k: _sanitize(v) for k, v in r.items()}
+    for r in df.where(pd.notna(df), None).to_dict(orient="records")
+]
 
 out = {
     "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
